@@ -27,8 +27,13 @@ while True:
     elif user_action.startswith('show'):
         todos = functions.get_todos()
 
-        for index, item in enumerate(todos):
-            print(functions.formatting_for_print(index, item))
+        if todos:
+            print()
+            for index, item in enumerate(todos):
+                print(functions.formatting_for_print(index, item))
+            print()
+        else:
+            print("Todo list in empty!")
 
     elif user_action.startswith('edit'):
         try:
