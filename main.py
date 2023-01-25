@@ -68,7 +68,7 @@ while True:
             functions.write_todos(todos)
 
             print()
-            print(functions.formatting_for_print(index, todo_complete), 'complete!')
+            print(f"{functions.formatting_for_print(index, todo_complete)}: completed!")
             print()
 
         except ValueError:
