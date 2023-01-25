@@ -67,7 +67,9 @@ while True:
             todo_complete = todos.pop(index)
             functions.write_todos(todos)
 
+            print()
             print(functions.formatting_for_print(index, todo_complete), 'complete!')
+            print()
 
         except ValueError:
             functions.except_value()
